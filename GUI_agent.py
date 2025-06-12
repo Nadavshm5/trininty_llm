@@ -447,6 +447,7 @@ def run_gui():
         "Bad Peer Behavior: Issues arising from other devices or network participants that may affect connectivity."
         "if 'PoorlyDisc' value is '25', classify the log as Environment and mentioned the AP is probably not seen in scan"
         "if 'PoorlyDisc' value is '100' , it is normal and means the AP is being heard in scans"
+        "when issues such as Auth Tx failure or assoc Tx failure are observed, refer the log to additional air sniffer required and classify as 'missing debug data'"
         "if you think there is no connectivity issue or a problem at the log , refer it as no problem observed and classify as 'wrong prediction'"
 
         "Utilization of RAG File:"

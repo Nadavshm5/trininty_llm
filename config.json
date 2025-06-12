@@ -31,12 +31,12 @@
     "CONNECTION FAILED": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*CONNECTION FAILED",
     "SA query": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*triggering SA query",
     "assoc result": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*WDI_IND_ASSOC_RESULT",
-	"WRT install": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*\\[WRT2G\\] Installing",
-	"WRT preset": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*\\[WRT2G\\] Set internal preset",
-	"limited Connectivity": "(\\d{4}/\\d{2}/\\d{2}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*Limited Connectivity Recovery",
     "WRT install": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*\\[WRT2G\\] Installing",
     "WRT preset": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*\\[WRT2G\\] Set internal preset",
     "link switch complete": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*Roam Completed - Link switched",
+    "Limited Connectivity": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*Limited Connectivity Recovery",
+	"Tx Failed": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*Tx Faild due to reason",
+    "AP selection": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*\\[prvhApSelectionPrintBestCandidate\\] ChannelLoad:",
     "disassoc": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*CORE_INDICATION_DISASSOCIATION"
   },
   "event_styles": {

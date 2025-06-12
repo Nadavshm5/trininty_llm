@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import os
 
 def process_description_column(input_csv, output_csv):
     # Read the CSV file into a DataFrame
@@ -32,7 +33,9 @@ def process_description_column(input_csv, output_csv):
     # Write the modified DataFrame to a new CSV file
     df.to_csv(output_csv, index=False)
 
-# Example usage
-input_csv = 'C:\\Users\\nshmueli\\Downloads\\daily_ai.csv'  # Path to the input CSV file
-output_csv = 'C:\\Users\\nshmueli\\Downloads\\processed_tickets.csv'  # Path to the output CSV file
+
+
+input_csv = input("Insert path here: ")  # Prompt user for the input CSV file path
+# Get the directory of the input file and replace the filename with 'processed_tickets.csv'
+output_csv = os.path.join(os.path.dirname(input_csv), 'processed_tickets.csv')
 process_description_column(input_csv, output_csv)
