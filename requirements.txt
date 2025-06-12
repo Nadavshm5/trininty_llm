@@ -1,0 +1,16 @@
+python-dotenv
+langchain
+langchain_openai
+langchain_community
+azure-search-documents
+azure-core
+openai
+tiktoken
+python-docx
+docx2txt
+jira
+azure-identity
+pandas
+matplotlib
+pydantic_ai
+pandas

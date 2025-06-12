@@ -1,0 +1,12 @@
+[06/09/2025-09:45:26.635 [core      ] [MMACSYS     ] [S] [11] [prvMsysHandleEvNicAliveSelfInit  ] uCode is alive - ALIVE_UCODE_OK - pAliveResp->img_rev.rev_type=1
+[06/09/2025-09:45:48.331 [core      ] [CNCT_FLOW   ] [S] [4 ] [printScanRequestInfo             ] SCAN_REQUEST - OS - NumOfChannels=40
+[06/09/2025-09:45:48.349 [core      ] [CNCT_FLOW   ] [S] [12] [printScanRequestInfo             ] SCAN_REQUEST - OS - NumOfChannels=40
+[06/09/2025-09:45:53.051 [core      ] [CNCT_FLOW   ] [S] [8 ] [printScanRequestInfo             ] SCAN_REQUEST - OS - NumOfChannels=7
+[06/09/2025-09:45:54.022 [core      ] [CNCT_FLOW   ] [S] [11] [mlmeStaUpdatePolicyProfile       ] CONNECT_REQ - to:TSNOfficeWLA
+[06/09/2025-09:45:54.022 [core      ] [AP_SELECTION] [S] [11] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:300867 band:1, channel:60, BW:20MHz, mode:<NULL>, RSSI:-60, tput:287000 Address(2C:57:41:82:C3:8D)
+[06/09/2025-09:45:54.022 [core      ] [HMAC_CM     ] [P] [11] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] Ssid:TSNOfficeWLAN Ch:60 Rssi:-60 Bssid: Address(2C:57:41:82:C3:8D)
+[06/09/2025-09:45:54.051 [core      ] [CNCT_FLOW   ] [S] [1 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        TSNOfficeWLA 2C:57:41:82:C3:8D, channel = 60, band = 5.2GHz
+[06/09/2025-09:45:54.069 [WinN      ] [OSC         ] [S] [12] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/09/2025-09:45:54.069 [core      ] [CNCT_FLOW   ] [S] [12] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_SUCCESS
+[06/09/2025-09:45:54.070 [core      ] [ROAM_DECISIO] [S] [12] [bssVifRoamingDecisionOnAssocSucce] ROAMING DECISION VIF ID 0 - Association Success
+[06/09/2025-09:45:54.070 [core      ] [CNCT_FLOW   ] [S] [12] [hPolicyAssociationSuccessEvent   ] CONNECTED - to:            TSNOfficeWLA 2C:57:41:82:C3:8D, channel = 60, band = 5.2GHz
