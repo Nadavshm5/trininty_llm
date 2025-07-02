@@ -1,33 +1,312 @@
-[06/22/2025-10:11:23.558 [core      ] [ROAM_DECISIO] [S] [10] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0 - BT Connectivity Changed
-[06/22/2025-10:11:23.559 [core      ] [AP_SELECTION] [S] [10] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:9546508 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-40, tput:6917760 Address(D6:A7:31:20:26:49)
-[06/22/2025-10:11:23.559 [core      ] [AP_SELECTION] [S] [10] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:100
-[06/22/2025-10:11:23.559 [core      ] [ROAM_DECISIO] [S] [10] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0: better candidate found - triggering roam scan
-[06/22/2025-10:11:23.559 [core      ] [ROAM_DECISIO] [S] [10] [prvRoamingDecisionCallFindCandida] Triggering Roaming Flow due to reason ROAM_REASON_BT_CONNECTIVITY_CHANGED (VIF ID 0)
-[06/22/2025-10:11:23.559 [core      ] [AP_SELECTION] [S] [10] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:9546508 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-40, tput:6917760 Address(D6:A7:31:20:26:49)
-[06/22/2025-10:11:23.560 [core      ] [CNCT_FLOW   ] [S] [10] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=2
-[06/22/2025-10:11:23.560 [core      ] [CNCT_FLOW   ] [S] [10] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=1
-[06/22/2025-10:11:23.789 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:9546508 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-40, tput:6917760 Address(D6:A7:31:20:26:49)
-[06/22/2025-10:11:23.789 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:100
-[06/22/2025-10:11:23.789 [core      ] [BSS_VIF     ] [S] [4 ] [bssLinksMgrModifyingLinks        ] [mld] Link switching from band 1 to 2
-[06/22/2025-10:11:23.817 [core      ] [CNCT_FLOW   ] [S] [7 ] [prvSecurityKeyMgrPublishEncryptio] ENCRYPTION READY!!! - For control flows only - (Datapath is still WIP)
-[06/22/2025-10:11:23.819 [core      ] [ROAM_DECISIO] [S] [8 ] [roamingDecisionHandleEventLinkSwi] ROAM_DECISION for VIF ID 0 - Roam Completed - Link switched
-[06/22/2025-10:11:23.819 [core      ] [ROAM_DECISIO] [S] [8 ] [prvRoamingDecisionGetRoamingTime ] roamingTimeUs:318679975
-[06/22/2025-10:11:23.925 [core      ] [ROAM_DECISIO] [S] [8 ] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0 - BT Connectivity Changed
-[06/22/2025-10:11:23.926 [core      ] [AP_SELECTION] [S] [8 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:9546508 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-40, tput:6917760 Address(D6:A7:31:20:26:49)
-[06/22/2025-10:11:23.926 [core      ] [AP_SELECTION] [S] [8 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:100
-[06/22/2025-10:11:24.076 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0 - BT Connectivity Changed
-[06/22/2025-10:11:24.077 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:9546508 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-40, tput:6917760 Address(D6:A7:31:20:26:49)
-[06/22/2025-10:11:24.077 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:100
-[06/22/2025-10:11:28.380 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -255 to -41, orig threshold -72, rssiThreshold -72
-[06/22/2025-10:11:53.607 [WinN      ] [CNCT_FLOW   ] [S] [2 ] [dumpCmdData                      ] WDI_TASK_DISCONNECT - got task
-[06/22/2025-10:11:53.607 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifRoamingDecisionAbortAPI    ] ROAMING DECISION VIF ID 0 - Connection Ended Abort Actions
-[06/22/2025-10:11:53.607 [core      ] [CNCT_FLOW   ] [S] [2 ] [hmfmEvMgmtFrameCreate            ] DEAUTH_REQ - sent to:      TP-Link_2644_MLO F0:A7:31:20:26:49, channel = 69, band = 6_7GHz
-[06/22/2025-10:11:53.611 [core      ] [OSC         ] [S] [3 ] [printHandlingInfo                ] coreInd: CORE_INDICATION_DISASSOCIATION is handled by (WDI_BSS_OBSERVER)
-[06/22/2025-10:11:55.758 [core      ] [MMACSYS     ] [S] [0 ] [prvMsysHandleEvNicAliveSelfInit  ] uCode is alive - ALIVE_UCODE_OK - pAliveResp->img_rev.rev_type=1
-[06/22/2025-10:11:56.566 [core      ] [MMACSYS     ] [S] [0 ] [prvMsysHandleEvNicAliveSelfInit  ] uCode is alive - ALIVE_UCODE_OK - pAliveResp->img_rev.rev_type=1
-[06/22/2025-10:11:57.573 [core      ] [CNCT_FLOW   ] [S] [7 ] [printScanRequestInfo             ] SCAN_REQUEST - OS - NumOfChannels=56
-[06/22/2025-10:11:57.594 [core      ] [CNCT_FLOW   ] [S] [11] [printScanRequestInfo             ] SCAN_REQUEST - OS - NumOfChannels=55
-[06/22/2025-10:11:57.597 [core      ] [CNCT_FLOW   ] [S] [11] [printScanRequestInfo             ] SCAN_REQUEST - OS - NumOfChannels=55
-[06/22/2025-10:11:57.620 [core      ] [CNCT_FLOW   ] [S] [0 ] [printScanRequestInfo             ] SCAN_REQUEST - OS - NumOfChannels=55
-[06/22/2025-10:11:57.711 [core      ] [APPLICATION ] [S] [11] [debugInfraApplicationPrintOidHand] [WRT2G] Set internal preset 14
-[06/22/2025-10:12:00.127 [core      ] [MMACSYS     ] [S] [0 ] [prvMsysHandleEvNicAliveSelfInit  ] uCode is alive - ALIVE_UCODE_OK - pAliveResp->img_rev.rev_type=1
+[06/30/2025-13:36:05.836 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -59 to -58, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:06.962 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -58 to -59, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:07.679 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -59 to -60, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:07.884 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -60 to -59, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:09.420 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -59 to -58, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:10.444 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -58 to -59, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:10.956 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -59 to -58, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:13.209 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -58 to -57, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:18.329 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -57 to -53, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:23.450 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -53 to -54, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:25.600 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -54 to -48, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:27.341 [core      ] [ROAM_DECISIO] [S] [5 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -48 to -42, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:27.956 [core      ] [ROAM_DECISIO] [S] [5 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -42 to -36, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:29.317 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0 - BT Connectivity Changed
+[06/30/2025-13:36:29.317 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:7955424 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-36, tput:6917760 Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:36:29.317 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:100
+[06/30/2025-13:36:30.106 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -36 to -30, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:32.359 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -30 to -36, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:34.100 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -36 to -42, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:35.738 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -42 to -48, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:40.961 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -48 to -51, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:41.139 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0 - BT Connectivity Changed
+[06/30/2025-13:36:41.139 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:5966568 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-51, tput:5188320 Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:36:41.139 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:100
+[06/30/2025-13:36:41.514 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0 - BT Connectivity Changed
+[06/30/2025-13:36:41.514 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:5966568 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-51, tput:5188320 Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:36:41.514 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:100
+[06/30/2025-13:36:43.829 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -51 to -58, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:43.931 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -58 to -59, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:44.033 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -59 to -60, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:44.136 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -60 to -61, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:44.443 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -61 to -62, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:44.606 [RxData    ] [TX          ] [W] [6 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:36:45.160 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -62 to -63, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:45.570 [core      ] [ROAM_DECISIO] [S] [6 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -63 to -64, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:45.877 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -64 to -65, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:46.287 [core      ] [ROAM_DECISIO] [S] [4 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -65 to -66, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:46.389 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -66 to -65, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:46.491 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -65 to -66, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:46.696 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -66 to -67, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:46.696 [core      ] [CNCT_FLOW   ] [S] [1 ] [printScanRequestInfo             ] SCAN_REQUEST - BG SCAN - NumOfChannels=40
+[06/30/2025-13:36:46.696 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0: NearToFar Threshold Crossing and BG scan triggered
+[06/30/2025-13:36:46.696 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0: Roaming scan is not needed
+[06/30/2025-13:36:46.799 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -67 to -66, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:47.208 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -66 to -67, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:47.720 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -67 to -68, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:48.027 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -68 to -69, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:48.334 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -69 to -68, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:48.437 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -68 to -69, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:48.647 [core      ] [ROAM_DECISIO] [S] [4 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -69 to -70, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:48.744 [core      ] [ROAM_DECISIO] [S] [6 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -70 to -71, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:49.051 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -71 to -72, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:49.154 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -72 to -71, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:49.256 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -71 to -72, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:49.343 [core      ] [CNCT_FLOW   ] [S] [2 ] [printScanRequestInfo             ] SCAN_REQUEST - BG SCAN - NumOfChannels=6
+[06/30/2025-13:36:49.359 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -72 to -73, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:49.359 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 - RSSI decreased below the Roaming Threshold
+[06/30/2025-13:36:49.359 [core      ] [ROAM_DECISIO] [S] [2 ] [prvRoamingDecisionCallFindCandida] Triggering Roaming Flow due to reason ROAM_REASON_LOW_RSSI (VIF ID 0)
+[06/30/2025-13:36:49.359 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:596643 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-60, tput:4150560 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:49.359 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:50,PoorlyDisc:25
+[06/30/2025-13:36:49.359 [core      ] [CNCT_FLOW   ] [S] [2 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=3
+[06/30/2025-13:36:49.359 [core      ] [CNCT_FLOW   ] [S] [2 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=2
+[06/30/2025-13:36:49.516 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:1432026 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-73, tput:1383600 Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:36:49.516 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:100
+[06/30/2025-13:36:49.666 [core      ] [ROAM_DECISIO] [S] [5 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -73 to -72, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:49.666 [core      ] [ROAM_DECISIO] [S] [5 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 - RSSI increased above Roaming Threshold
+[06/30/2025-13:36:50.485 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -72 to -73, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:50.485 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 - RSSI decreased below the Roaming Threshold
+[06/30/2025-13:36:50.485 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 - don't trigger additional Roaming Scan within the same BG Scan cycle
+[06/30/2025-13:36:50.485 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0: Roaming scan is not needed
+[06/30/2025-13:36:50.690 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -73 to -74, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:51.816 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -74 to -75, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:52.021 [core      ] [ROAM_DECISIO] [S] [4 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -75 to -74, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:52.328 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -74 to -75, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:52.636 [core      ] [ROAM_DECISIO] [S] [5 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -75 to -76, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:53.045 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -76 to -77, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:53.078 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:53.096 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:53.352 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -77 to -78, orig threshold -72, rssiThreshold -77
+[06/30/2025-13:36:53.352 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 - RSSI decreased by RoamingRssiDelta from Previous Scan
+[06/30/2025-13:36:53.352 [core      ] [ROAM_DECISIO] [S] [3 ] [prvRoamingDecisionCallFindCandida] Triggering Roaming Flow due to reason ROAM_REASON_LOW_RSSI (VIF ID 0)
+[06/30/2025-13:36:53.353 [core      ] [AP_SELECTION] [S] [3 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:596643 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-60, tput:4150560 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:53.353 [core      ] [AP_SELECTION] [S] [3 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:50,PoorlyDisc:25
+[06/30/2025-13:36:53.353 [core      ] [CNCT_FLOW   ] [S] [3 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=3
+[06/30/2025-13:36:53.353 [core      ] [CNCT_FLOW   ] [S] [3 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=2
+[06/30/2025-13:36:53.517 [core      ] [AP_SELECTION] [S] [3 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:715888 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-78, tput:691680 Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:36:53.517 [core      ] [AP_SELECTION] [S] [3 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:100
+[06/30/2025-13:36:53.519 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:53.762 [core      ] [ROAM_DECISIO] [S] [5 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 0 - Rssi Level Changed from -78 to -79, orig threshold -72, rssiThreshold -82
+[06/30/2025-13:36:53.893 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.004 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.076 [core      ] [ROAM_DECISIO] [S] [6 ] [bssVifOnBtConnectivityChangedAPI ] ROAMING DECISION VIF ID 0 - BT Connectivity Changed
+[06/30/2025-13:36:54.077 [core      ] [AP_SELECTION] [S] [5 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:715888 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-79, tput:691680 Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:36:54.077 [core      ] [AP_SELECTION] [S] [5 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:100
+[06/30/2025-13:36:54.110 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.268 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.271 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.371 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.416 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.473 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.571 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.576 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.813 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:54.872 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:55.006 [core      ] [AP_SELECTION] [S] [6 ] [prvApSelectionMarkApAsMisbehaving] Marked AP as misbehaving with reason MISBEHAVING_AP_REASON_MISSED_BEACON_WITH_DATA_RECEIVED, TS=133957534046910170 Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:36:55.010 [core      ] [ROAM_DECISIO] [S] [4 ] [roamingDecisionHandleEventMissedB] MISSED BEACONS on VIF ID 0, driver link index 0 - Consecutive missed beacons  (9) crossed the initial threshold of 9 for the first time
+[06/30/2025-13:36:55.011 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:596643 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-60, tput:4150560 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:55.011 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:50,PoorlyDisc:25
+[06/30/2025-13:36:55.011 [core      ] [ROAM_DECISIO] [S] [4 ] [prvRoamingDecisionOnMissedBeacons] MISSED BEACONS on VIF ID 0 - triggering emergency scan since other candidate found
+[06/30/2025-13:36:55.011 [core      ] [ROAM_DECISIO] [S] [4 ] [prvRoamingDecisionCallFindCandida] Triggering Roaming Flow due to reason ROAM_REASON_MISSED_BEACONS (VIF ID 0)
+[06/30/2025-13:36:55.011 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:596643 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-60, tput:4150560 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:55.011 [core      ] [CNCT_FLOW   ] [S] [4 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=3
+[06/30/2025-13:36:55.011 [core      ] [CNCT_FLOW   ] [S] [4 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=2
+[06/30/2025-13:36:55.050 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:55.313 [core      ] [ROAM_DECISIO] [S] [5 ] [roamingDecisionHandleEventMissedB] MISSED BEACONS on VIF ID 0, driver link index 0 - Consecutive missed beacons  (11) crossed the initial threshold of 9 for the first time
+[06/30/2025-13:36:55.314 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:596643 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-60, tput:4150560 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:55.314 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:50,PoorlyDisc:25
+[06/30/2025-13:36:55.314 [core      ] [ROAM_DECISIO] [S] [6 ] [prvRoamingDecisionOnMissedBeacons] MISSED BEACONS on VIF ID 0 - triggering emergency scan since other candidate found
+[06/30/2025-13:36:55.344 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:36:55.388 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:596643 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-60, tput:4150560 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:55.388 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:50,PoorlyDisc:25
+[06/30/2025-13:36:55.388 [core      ] [CNCT_FLOW   ] [S] [1 ] [roamingDecisionHandleEventCandida] WDI - indicating roaming needed for VIF ID 0
+[06/30/2025-13:36:55.405 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnTaskRoamAPI              ] ROAMING DECISION VIF ID 0 - Task Roam Requested
+[06/30/2025-13:36:55.437 [core      ] [OSC         ] [S] [2 ] [printHandlingInfo                ] coreInd: CORE_INDICATION_DISASSOCIATION is handled by (WDI_BSS_OBSERVER)
+[06/30/2025-13:36:55.437 [core      ] [HMAC_CM     ] [P] [2 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:2, Ch:69 Rssi:-60, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:55.437 [core      ] [HMAC_CM     ] [P] [2 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:1, Ch:48 Rssi:-79, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:0B)
+[06/30/2025-13:36:55.474 [core      ] [CNCT_FLOW   ] [S] [0 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:0D, channel = 69, band = 6_7GHz
+[06/30/2025-13:36:55.576 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:55.975 [core      ] [CNCT_FLOW   ] [E] [5 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:55.977 [WinN      ] [OSC         ] [S] [3 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:55.977 [core      ] [CNCT_FLOW   ] [S] [3 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:55.977 [core      ] [AP_SELECTION] [S] [3 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:1193286 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-60, tput:4150560 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:55.977 [core      ] [AP_SELECTION] [S] [3 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:100,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:55.977 [core      ] [HMAC_CM     ] [P] [3 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:2, Ch:69 Rssi:-60, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:36:55.977 [core      ] [HMAC_CM     ] [P] [3 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:1, Ch:48 Rssi:-79, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:0B)
+[06/30/2025-13:36:56.014 [core      ] [CNCT_FLOW   ] [S] [3 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:0D, channel = 69, band = 6_7GHz
+[06/30/2025-13:36:56.115 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:56.199 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -255 to -79, orig threshold -72, rssiThreshold -72
+[06/30/2025-13:36:56.527 [core      ] [CNCT_FLOW   ] [E] [5 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:56.529 [WinN      ] [OSC         ] [S] [1 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:56.529 [core      ] [CNCT_FLOW   ] [S] [1 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:56.529 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:56.529 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:56.529 [core      ] [CNCT_FLOW   ] [S] [1 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=1
+[06/30/2025-13:36:56.556 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:56.556 [core      ] [AP_SELECTION] [S] [2 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:56.557 [core      ] [HMAC_CM     ] [P] [2 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-72, assocLinkId: 2, Bssid: Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:56.557 [core      ] [HMAC_CM     ] [P] [2 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-86, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:65)
+[06/30/2025-13:36:56.593 [core      ] [CNCT_FLOW   ] [S] [1 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:67, channel = 85, band = 6_7GHz
+[06/30/2025-13:36:56.695 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:57.105 [core      ] [CNCT_FLOW   ] [E] [1 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:57.107 [WinN      ] [OSC         ] [S] [1 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:57.107 [core      ] [CNCT_FLOW   ] [S] [1 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:57.108 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:57.108 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:57.108 [core      ] [CNCT_FLOW   ] [S] [1 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=1
+[06/30/2025-13:36:57.134 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:57.134 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:57.134 [core      ] [HMAC_CM     ] [P] [1 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-72, assocLinkId: 2, Bssid: Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:57.134 [core      ] [HMAC_CM     ] [P] [1 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-86, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:65)
+[06/30/2025-13:36:57.170 [core      ] [CNCT_FLOW   ] [S] [1 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:67, channel = 85, band = 6_7GHz
+[06/30/2025-13:36:57.272 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:57.682 [core      ] [CNCT_FLOW   ] [E] [3 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:57.683 [WinN      ] [OSC         ] [S] [1 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:57.683 [core      ] [CNCT_FLOW   ] [S] [1 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:57.684 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:57.684 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:57.684 [core      ] [CNCT_FLOW   ] [S] [1 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=1
+[06/30/2025-13:36:57.710 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:57.710 [core      ] [AP_SELECTION] [S] [1 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:57.710 [core      ] [HMAC_CM     ] [P] [1 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-72, assocLinkId: 2, Bssid: Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:57.710 [core      ] [HMAC_CM     ] [P] [1 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-86, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:65)
+[06/30/2025-13:36:57.747 [core      ] [CNCT_FLOW   ] [S] [2 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:67, channel = 85, band = 6_7GHz
+[06/30/2025-13:36:57.849 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:58.257 [core      ] [CNCT_FLOW   ] [E] [4 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:58.259 [WinN      ] [OSC         ] [S] [4 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:58.259 [core      ] [CNCT_FLOW   ] [S] [4 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:58.260 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:58.260 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:58.260 [core      ] [CNCT_FLOW   ] [S] [4 ] [printScanRequestInfo             ] SCAN_REQUEST - FIND CANDIDATE - NumOfChannels=1
+[06/30/2025-13:36:58.287 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:358006 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-72, tput:1383600 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:58.287 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:58.287 [core      ] [HMAC_CM     ] [P] [6 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-72, assocLinkId: 2, Bssid: Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:58.287 [core      ] [HMAC_CM     ] [P] [6 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:67 Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-86, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:65)
+[06/30/2025-13:36:58.325 [core      ] [CNCT_FLOW   ] [S] [4 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:67, channel = 85, band = 6_7GHz
+[06/30/2025-13:36:58.427 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:58.834 [core      ] [CNCT_FLOW   ] [E] [4 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:58.837 [WinN      ] [OSC         ] [S] [4 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:58.837 [core      ] [CNCT_FLOW   ] [S] [4 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:58.837 [core      ] [AP_SELECTION] [S] [4 ] [prvApSelectionMarkApAsMisbehaving] Marked AP as misbehaving with reason MISBEHAVING_AP_REASON_CONNECT_FAILURE, TS=133957534085215965 Address(4A:ED:00:14:FF:65)
+[06/30/2025-13:36:58.837 [core      ] [AP_SELECTION] [S] [4 ] [prvApSelectionMarkApAsMisbehaving] Marked AP as misbehaving with reason MISBEHAVING_AP_REASON_CONNECT_FAILURE, TS=133957534085215965 Address(5A:ED:00:14:FF:68)
+[06/30/2025-13:36:58.838 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:178972 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-79, tput:691680 Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:36:58.838 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:58.839 [core      ] [HMAC_CM     ] [P] [4 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-79, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:36:58.839 [core      ] [HMAC_CM     ] [P] [4 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-85, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:6B)
+[06/30/2025-13:36:58.877 [core      ] [CNCT_FLOW   ] [S] [4 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:6D, channel = 85, band = 6_7GHz
+[06/30/2025-13:36:58.978 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:59.382 [core      ] [CNCT_FLOW   ] [E] [4 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:59.384 [WinN      ] [OSC         ] [S] [4 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:59.384 [core      ] [CNCT_FLOW   ] [S] [4 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:59.385 [core      ] [AP_SELECTION] [S] [7 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:178972 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-79, tput:691680 Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:36:59.385 [core      ] [AP_SELECTION] [S] [7 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:59.386 [core      ] [HMAC_CM     ] [P] [7 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-79, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:36:59.386 [core      ] [HMAC_CM     ] [P] [7 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-85, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:6B)
+[06/30/2025-13:36:59.423 [core      ] [CNCT_FLOW   ] [S] [7 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:6D, channel = 85, band = 6_7GHz
+[06/30/2025-13:36:59.525 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:36:59.925 [core      ] [CNCT_FLOW   ] [E] [7 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:36:59.928 [WinN      ] [OSC         ] [S] [6 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:36:59.928 [core      ] [CNCT_FLOW   ] [S] [6 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:36:59.929 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:178972 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-79, tput:691680 Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:36:59.929 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:36:59.929 [core      ] [HMAC_CM     ] [P] [6 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-79, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:36:59.929 [core      ] [HMAC_CM     ] [P] [6 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-85, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:6B)
+[06/30/2025-13:36:59.967 [core      ] [CNCT_FLOW   ] [S] [5 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:6D, channel = 85, band = 6_7GHz
+[06/30/2025-13:37:00.068 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:37:00.472 [core      ] [CNCT_FLOW   ] [E] [4 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:37:00.474 [WinN      ] [OSC         ] [S] [4 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:37:00.474 [core      ] [CNCT_FLOW   ] [S] [4 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:37:00.475 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:178972 band:2, channel:85, BW:320MHz, mode:<NULL>, RSSI:-79, tput:691680 Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:37:00.475 [core      ] [AP_SELECTION] [S] [4 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:37:00.475 [core      ] [HMAC_CM     ] [P] [4 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-79, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:37:00.475 [core      ] [HMAC_CM     ] [P] [4 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:6D Ssid:CCSV_SED_WIFI7 band:1, Ch:44 Rssi:-85, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:6B)
+[06/30/2025-13:37:00.513 [core      ] [CNCT_FLOW   ] [S] [6 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:6D, channel = 85, band = 6_7GHz
+[06/30/2025-13:37:00.614 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:37:01.022 [core      ] [CNCT_FLOW   ] [E] [4 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:37:01.025 [WinN      ] [OSC         ] [S] [6 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:37:01.025 [core      ] [CNCT_FLOW   ] [S] [6 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:37:01.026 [core      ] [AP_SELECTION] [S] [6 ] [prvApSelectionMarkApAsMisbehaving] Marked AP as misbehaving with reason MISBEHAVING_AP_REASON_CONNECT_FAILURE, TS=133957534107096410 Address(4A:ED:00:14:FF:6B)
+[06/30/2025-13:37:01.026 [core      ] [AP_SELECTION] [S] [6 ] [prvApSelectionMarkApAsMisbehaving] Marked AP as misbehaving with reason MISBEHAVING_AP_REASON_CONNECT_FAILURE, TS=133957534107096410 Address(72:ED:00:14:FF:6E)
+[06/30/2025-13:37:01.026 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:178972 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-79, tput:691680 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:37:01.026 [core      ] [AP_SELECTION] [S] [6 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:37:01.028 [core      ] [HMAC_CM     ] [P] [5 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:2, Ch:69 Rssi:-79, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:37:01.028 [core      ] [HMAC_CM     ] [P] [5 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:1, Ch:48 Rssi:-79, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:0B)
+[06/30/2025-13:37:01.065 [core      ] [CNCT_FLOW   ] [S] [7 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:0D, channel = 69, band = 6_7GHz
+[06/30/2025-13:37:01.166 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:37:01.572 [core      ] [CNCT_FLOW   ] [E] [7 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:37:01.574 [WinN      ] [OSC         ] [S] [6 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:37:01.574 [core      ] [CNCT_FLOW   ] [S] [6 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:37:01.575 [core      ] [AP_SELECTION] [S] [5 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:178972 band:2, channel:69, BW:320MHz, mode:<NULL>, RSSI:-79, tput:691680 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:37:01.575 [core      ] [AP_SELECTION] [S] [5 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:100, Latency:100 ,CellEdge:100,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:25
+[06/30/2025-13:37:01.576 [core      ] [HMAC_CM     ] [P] [5 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:2, Ch:69 Rssi:-79, assocLinkId: 2, Bssid: Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:37:01.576 [core      ] [HMAC_CM     ] [P] [5 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:14:FF:0D Ssid:CCSV_SED_WIFI7 band:1, Ch:48 Rssi:-79, assocLinkId: 1, Bssid: Address(4A:ED:00:14:FF:0B)
+[06/30/2025-13:37:01.613 [core      ] [CNCT_FLOW   ] [S] [6 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:14:FF:0D, channel = 69, band = 6_7GHz
+[06/30/2025-13:37:01.715 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0xb0)!!!
+[06/30/2025-13:37:02.120 [core      ] [CNCT_FLOW   ] [E] [7 ] [cnctPluginBssFailureApPropertiesM] CONNECTION FAILED - AUTH_ATTEMPTS_EXHAUSTED(8)
+[06/30/2025-13:37:02.122 [WinN      ] [OSC         ] [S] [7 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:37:02.122 [core      ] [CNCT_FLOW   ] [S] [7 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_NO_AUTH_RESPONSE
+[06/30/2025-13:37:02.123 [core      ] [AP_SELECTION] [S] [7 ] [prvApSelectionMarkApAsMisbehaving] Marked AP as misbehaving with reason MISBEHAVING_AP_REASON_CONNECT_FAILURE, TS=133957534118070724 Address(4A:ED:00:14:FF:0B)
+[06/30/2025-13:37:02.123 [core      ] [AP_SELECTION] [S] [7 ] [prvApSelectionMarkApAsMisbehaving] Marked AP as misbehaving with reason MISBEHAVING_AP_REASON_CONNECT_FAILURE, TS=133957534118070724 Address(72:ED:00:14:FF:0E)
+[06/30/2025-13:37:02.123 [core      ] [AP_SELECTION] [S] [7 ] [prvhApSelectionPrintBestCandidate] [BC 0]: grade:68503 band:1, channel:40, BW:160MHz, mode:<NULL>, RSSI:-90, tput:72100 Address(4A:ED:00:86:37:1D)
+[06/30/2025-13:37:02.123 [core      ] [AP_SELECTION] [S] [7 ] [prvhApSelectionPrintBestCandidate] ChannelLoad:85, Latency:100 ,CellEdge:90,DCM:100,OverlapChannel:100,HbUhb low RSSI:90,excludedAP:100,PoorlyDisc:100
+[06/30/2025-13:37:02.125 [core      ] [HMAC_CM     ] [P] [7 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:86:37:1F Ssid:CCSV_SED_WIFI7 band:1, Ch:40 Rssi:-90, assocLinkId: 1, Bssid: Address(4A:ED:00:86:37:1D)
+[06/30/2025-13:37:02.125 [core      ] [HMAC_CM     ] [P] [7 ] [bssVifLinkProcessAttemptToConnect] [ATTEMPT_TO_CONNECT] to MLD:40:ED:00:86:37:1F Ssid:CCSV_SED_WIFI7 band:2, Ch:85 Rssi:-100, assocLinkId: 2, Bssid: Address(7A:ED:00:86:37:1F)
+[06/30/2025-13:37:02.160 [core      ] [CNCT_FLOW   ] [S] [6 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:86:37:1F, channel = 40, band = 5.2GHz
+[06/30/2025-13:37:02.671 [core      ] [CNCT_FLOW   ] [S] [4 ] [hmfmEvMgmtFrameCreate            ] AUTH_REQ - sent to:        CCSV_SED_WIFI7 40:ED:00:86:37:1F, channel = 40, band = 5.2GHz
+[06/30/2025-13:37:02.756 [WinN      ] [OSC         ] [S] [7 ] [handleAssociationComplete        ] WDI_IND_ASSOC_RESULT - sending Indication
+[06/30/2025-13:37:02.756 [core      ] [CNCT_FLOW   ] [S] [7 ] [logAssocResult                   ] WDI_IND_ASSOC_RESULT - WDI_ASSOC_STATUS_SUCCESS
+[06/30/2025-13:37:02.756 [core      ] [ROAM_DECISIO] [S] [7 ] [bssVifRoamingDecisionOnRoamComple] ROAMING DECISION VIF ID 0 - Roam Success
+[06/30/2025-13:37:02.756 [core      ] [ROAM_DECISIO] [S] [7 ] [prvRoamingDecisionGetRoamingTime ] roamingTimeUs:7351618
+[06/30/2025-13:37:02.756 [WinN      ] [CNCT_FLOW   ] [S] [7 ] [handleRoamingComplete            ] INDICATION_ROAM_COMPLETE
+[06/30/2025-13:37:02.757 [core      ] [CNCT_FLOW   ] [S] [6 ] [hPolicyAssociationSuccessEvent   ] CONNECTED - to: MLD AP-            CCSV_SED_WIFI7 40:ED:00:86:37:1F, channel = 40, band = 5.2GHz
+[06/30/2025-13:37:02.873 [core      ] [CNCT_FLOW   ] [S] [4 ] [prvSecurityKeyMgrPublishEncryptio] ENCRYPTION READY!!! - For control flows only - (Datapath is still WIP)
+[06/30/2025-13:37:03.228 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -86 to -89, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:03.285 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:03.446 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:03.448 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:03.637 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -89 to -88, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:03.842 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -88 to -87, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:04.047 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -87 to -88, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:05.708 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:06.095 [core      ] [ROAM_DECISIO] [S] [6 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -88 to -89, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:06.175 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:06.789 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:07.017 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -89 to -90, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:07.101 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:07.119 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -90 to -89, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:07.327 [core      ] [ROAM_DECISIO] [S] [0 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -89 to -88, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:07.426 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -88 to -87, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:07.839 [core      ] [ROAM_DECISIO] [S] [1 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -87 to -86, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:08.146 [core      ] [ROAM_DECISIO] [S] [3 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -86 to -87, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:09.270 [core      ] [ROAM_DECISIO] [S] [6 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -87 to -88, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:10.826 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:10.866 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:10.908 [core      ] [ROAM_DECISIO] [S] [2 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -88 to -89, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:10.940 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:10.978 [RxData    ] [TX          ] [W] [2 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.041 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.079 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.144 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.220 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.256 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.472 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.572 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.584 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.628 [core      ] [ROAM_DECISIO] [S] [4 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -89 to -88, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:11.685 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.730 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.789 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:11.894 [RxData    ] [TX          ] [W] [3 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.035 [core      ] [ROAM_DECISIO] [S] [4 ] [bssVifOnRssiChangedAPI           ] ROAMING DECISION VIF ID 0 driverLinkId 1 - Rssi Level Changed from -88 to -87, orig threshold -72, rssiThreshold -91
+[06/30/2025-13:37:12.037 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.095 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.137 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.240 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.295 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.343 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.402 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.444 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x82 (uCode=0x82 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.516 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.548 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.548 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
+[06/30/2025-13:37:12.570 [RxData    ] [TX          ] [W] [7 ] [prvTxPacketTxedByFw              ] (1703) - Tx Faild due to reason 0x83 (uCode=0x83 frameControl=0x4188)!!!
