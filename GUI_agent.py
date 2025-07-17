@@ -17,6 +17,7 @@ from azure.core.credentials import AzureKeyCredential
 from azure.search.documents.models import VectorizedQuery
 from openai import AsyncAzureOpenAI
 from openai.types import CreateEmbeddingResponse
+import csv
 
 load_dotenv()
 
@@ -173,21 +174,21 @@ class BossAgent:
             print("Failed to decode JSON response.")
             response_data = {}
 
-        connectivity_issue = response_data.get("Connectivity Issue Detected","")
+        connectivity_issue = response_data.get("Connectivity Issue Detected", "")
         reason = response_data.get("Reason", "")
         classification = response_data.get("Classification", "")
-        Average_RSSI = response_data.get("Average RSSI", "")
+        average_rssi = response_data.get("Average RSSI", "")
 
         # Debug: Print parsed values to verify correctness
-        #print("Parsed Connectivity Issue:", connectivity_issue)
-        #print("Parsed Reason:", reason)
-        #print("Parsed Classification:", classification)
+        # print("Parsed Connectivity Issue:", connectivity_issue)
+        # print("Parsed Reason:", reason)
+        # print("Parsed Classification:", classification)
 
         return {
             "connectivity_issue": connectivity_issue,
             "reason": reason,
             "classification": classification,
-            "Average RSSI": Average_RSSI
+            "average_rssi": average_rssi
         }
 
     def run(self, user_query: str) -> dict:
@@ -241,11 +242,10 @@ def generate_text_representation(df):
         # Add the line to the text representation
         text_representation.append(
             f"[{row['LineContent']}"
-       )
+        )
 
     return "\n".join(text_representation)
 
-# The rest of your code remains unchanged
 
 async def process_log(log_file_path, start_line, end_line, boss_agent):
     df = parse_log_file(log_file_path, start_line, end_line)
@@ -261,8 +261,6 @@ async def process_log(log_file_path, start_line, end_line, boss_agent):
     # Analyze the text representation using the provided BossAgent instance
     response = await boss_agent.run_async(text_representation)
     return response, txt_path
-
-# The rest of your code remains unchanged
 
 
 def run_gui():
@@ -302,8 +300,7 @@ def run_gui():
         connectivity_issue = response.get('connectivity_issue', '')
         reason = response.get('reason', '')
         classification = response.get('classification', '')
-        Average_RSSI = response.get('Average RSSI','')
-
+        average_rssi = response.get('average_rssi', '')
 
         connectivity_issue_text.delete("1.0", tk.END)
         connectivity_issue_text.insert(tk.END, connectivity_issue)
@@ -311,19 +308,19 @@ def run_gui():
         reason_text.insert(tk.END, reason)
         classification_text.delete("1.0", tk.END)
         classification_text.insert(tk.END, classification)
-        Average_RSSI_text.delete("1.0", tk.END)
-        Average_RSSI_text.insert(tk.END, Average_RSSI)
+        average_rssi_text.delete("1.0", tk.END)
+        average_rssi_text.insert(tk.END, average_rssi)
         link_label.config(text=f"Log Text Representation: {txt_path}")
 
         append_to_csv(jira_ticket, log_file_path, start_line, end_line, connectivity_issue, reason, classification,
-                      final_system_prompt)
+                      average_rssi, final_system_prompt)
 
     def append_to_csv(jira_ticket, log_path, start_line, end_line, connectivity_issue, reason, classification,
-                      prompt_used):
+                      average_rssi, prompt_used):
         import csv
-        csv_file_path = os.path.join(os.path.dirname(__file__), 'results.csv')
-        fieldnames = ['Jira Ticket', 'Log Path', 'Start Line', 'End Line', 'Connectivity Issue Detected', 'Reason',
-                      'Classification', 'Prompt Used']
+        csv_file_path = os.path.join(os.path.dirname(log_path), 'results.csv')  # Save in the same directory as the log file
+        fieldnames = ['Jira Ticket', 'UserAccessLogPath', 'Start Line', 'End Line', 'IssueId', 'Connectivity Issue Detected', 'Reason',
+                      'Classification', 'Average_RSSI', 'Prompt Used']
 
         file_exists = os.path.isfile(csv_file_path)
 
@@ -334,12 +331,14 @@ def run_gui():
 
             writer.writerow({
                 'Jira Ticket': jira_ticket,
-                'Log Path': log_path,
+                'UserAccessLogPath': log_path,
                 'Start Line': start_line,
                 'End Line': end_line,
+                'IssueId': connectivity_issue,  # Assuming 'IssueId' is the same as 'Connectivity Issue Detected'
                 'Connectivity Issue Detected': connectivity_issue,
                 'Reason': reason,
                 'Classification': classification,
+                'Average_RSSI': average_rssi,
                 'Prompt Used': prompt_used
             })
 
@@ -349,44 +348,76 @@ def run_gui():
             return
 
         df = pd.read_csv(csv_file_path)
-        results = []
 
-        for index, row in df.iterrows():
-            jira_ticket_entry.delete(0, tk.END)
-            jira_ticket_entry.insert(tk.END, row['Issue key'])
+        # Debug: Print the column names to verify
+        print("CSV Column Names:", df.columns)
 
-            start_line_entry.delete(0, tk.END)
-            start_line_entry.insert(tk.END, row['start line'])
+        # Define the path for the results CSV
+        results_csv_path = os.path.join(os.path.dirname(csv_file_path), 'processed_results.csv')
 
-            end_line_entry.delete(0, tk.END)
-            end_line_entry.insert(tk.END, row['end line'])
+        # Define the fieldnames for the CSV
+        fieldnames = ['Jira Ticket', 'UserAccessLogPath', 'Start Line', 'End Line', 'IssueId',
+                      'Connectivity Issue Detected', 'Reason', 'Classification', 'Average_RSSI', 'Prompt Used']
 
-            log_path_entry.delete(0, tk.END)
-            log_path_entry.insert(tk.END, row['log path'])
+        # Check if the results CSV already exists
+        file_exists = os.path.isfile(results_csv_path)
 
-            updated_system_prompt = system_prompt_text.get("1.0", tk.END).strip()
-            final_system_prompt = updated_system_prompt + "\n" + uneditable_prompt
+        # Open the results CSV file in append mode
+        with open(results_csv_path, mode='a', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-            boss_agent = BossAgent(llm_model=None, system_prompt=final_system_prompt)
-            response = asyncio.run(process_log(row['log path'], row['start line'], row['end line'], boss_agent))
+            # Write the header if the file does not exist
+            if not file_exists:
+                writer.writeheader()
 
-            connectivity_issue = response[0].get('connectivity_issue', '')
-            reason = response[0].get('reason', '')
-            classification = response[0].get('classification', '')
-            Average_rssi = response[0].get('Average_RSSI', '')
+            for index, row in df.iterrows():
+                # Handle 'Jira Ticket' field, allowing for null values
+                jira_ticket = row.get('JiraIssueKey', '') if 'JiraIssueKey' in df.columns else ''
 
-            results.append({
-                'Issue key': row['Issue key'],
-                'log path': row['log path'],
-                'start line': row['start line'],
-                'end line': row['end line'],
-                'connectivity issue detected': connectivity_issue,
-                'reason': reason,
-                'classification': classification
-            })
+                jira_ticket_entry.delete(0, tk.END)
+                jira_ticket_entry.insert(tk.END, jira_ticket)
 
-        results_df = pd.DataFrame(results)
-        results_df.to_csv('processed_results.csv', index=False)
+                start_line_entry.delete(0, tk.END)
+                start_line_entry.insert(tk.END, str(row.get('StartSequence', '')))
+
+                end_line_entry.delete(0, tk.END)
+                end_line_entry.insert(tk.END, str(row.get('EndSequence', '')))
+
+                log_path_entry.delete(0, tk.END)
+                log_path_entry.insert(tk.END, row.get('UserAccessLogPath', ''))
+
+                updated_system_prompt = system_prompt_text.get("1.0", tk.END).strip()
+                final_system_prompt = updated_system_prompt + "\n" + uneditable_prompt
+
+                boss_agent = BossAgent(llm_model=None, system_prompt=final_system_prompt)
+                response = asyncio.run(process_log(
+                    row.get('UserAccessLogPath', ''),
+                    int(row.get('StartSequence', 0)),  # Convert to integer
+                    int(row.get('EndSequence', 0)),  # Convert to integer
+                    boss_agent
+                ))
+
+                connectivity_issue = response[0].get('connectivity_issue', '')
+                reason = response[0].get('reason', '')
+                classification = response[0].get('classification', '')
+                average_rssi = response[0].get('average_rssi', '')
+
+                # Write the result for the current case to the CSV
+                writer.writerow({
+                    'Jira Ticket': jira_ticket,
+                    'UserAccessLogPath': row.get('UserAccessLogPath', ''),
+                    'Start Line': row.get('StartSequence', ''),
+                    'End Line': row.get('EndSequence', ''),
+                    'IssueId': connectivity_issue,
+                    'Connectivity Issue Detected': connectivity_issue,
+                    'Reason': reason,
+                    'Classification': classification,
+                    'Average_RSSI': average_rssi,
+                    'Prompt Used': final_system_prompt
+                })
+
+                # Optionally, print a message indicating progress
+                print(f"Processed case {index + 1}/{len(df)}")
 
     root = tk.Tk()
     root.title("Log Analyzer")
@@ -424,60 +455,59 @@ def run_gui():
     system_prompt_text = tk.Text(root, height=10, width=100)
     system_prompt_text.grid(row=4, column=1, padx=10, pady=5, sticky="nsew")
     default_system_prompt = (
-                "Objective: You are an intelligent agent designed to analyze WiFi driver logs to identify connectivity issues specifically related to the driver."
-                "Your analysis should prioritize issues based on the following hierarchy:"
-                "WRT Issue"
-                "Limited Connectivity"
-                "Borderline conditions - RF"
-                "Assert"
-                "PoorlyDisc"
-                "Missing Debug Data"
-                "Bad Peer Behavior"
-                "Wrong Prediction"
-                "Bug"
-                "unknown scenario"
-                "if couple of issues observed in the same log , determine the final classification according to priority."
-                "Resources: You have access to a Retrieval-Augmented Generation (RAG) file containing comprehensive information on WiFi driver system requirements and specifications."
-                "Use this resource to inform your analysis and ensure accuracy in identifying driver-related issues."
-                "Instructions:"
-                "Log Analysis:"
-                "Review the WiFi driver logs provided."
-                "Identify patterns, anomalies, or error codes that indicate potential connectivity issues."
-                "Issue Classification:"
-                "Determine if the connectivity issue is directly related to the WiFi driver."
-                "Your classification options are: 'Borderline conditions - RF', 'Wrong Prediction', 'Environment', 'Driver Bug', 'Inapplicable', 'Missing Debug Data', 'Wrong Detection'."
-                "Prioritization:"
-                "1. WRT Issue: If scenarios such as [WRT2G] observed, classify as 'Inapplicable' and ignore other conditions."
-                "2. Limited Connectivity: If limited connectivity is observed, classify as 'Environment'."
-                "3. Borderline conditions - RF: RSSI values are inherently negative and should be treated as such. Ensure that the '-' sign is interpreted as a minus sign indicating a negative value. "
-                "If the majority of 'BC 0' prints show RSSI values lower than -78 dB (e.g., -79, -80), classify as 'Borderline conditions - RF'." 
-                "Example - An average RSSI level of -65 is considered good, while an average RSSI level of -79, -80, -81, and so on is considered bad."
-                "4. assert: when a fatal error or FW assert observed , classify as assert"
-                "5. PoorlyDisc: If 'PoorlyDisc' value is '25' is seen more than once, classify as 'Environment' and mention the AP is probably not seen in scan. If 'PoorlyDisc' value is '100', it is normal."
-                "6. Missing Debug Data: For issues like Auth Tx failure or assoc Tx failure AND when the average RSSI level are within acceptable levels , meaning average rssi above -78"
-                "classify as 'Missing Debug Data' and recommend additional air sniffer, if the average RSSI is lower, prefer classification of 'Borderline conditions - RF' "
-                "7. Bad Peer Behavior: Identify issues arising from other devices or network participants affecting connectivity."
-                "8. Wrong Prediction: If no connectivity issue or problem is observed, classify as 'Wrong Prediction'."
-                "9. Bug: Identify any driver-related bugs."
-                "10. Unknown scenario : if non of the above seems to fit , please classify as unknown scenario"
-                "Utilization of RAG File:"
-                "Reference the RAG file to verify driver specifications and requirements."
-                "Use the information to support your analysis and ensure that identified issues align with known driver limitations or requirements."
-                "Reporting:"
-                "Provide a clear and concise report of your findings."
-                "Include a summary of identified driver-related issues and an explanation of issues attributed to external factors."
-                "Continuous Improvement:"
-                "Learn from each analysis to improve future assessments."
-                "Adapt your approach based on feedback and new information."
-                "Output Format:"
-                "Use structured data formats (e.g., JSON, CSV) for easy integration with other systems."
-                "Ensure clarity and precision in your language to facilitate understanding by technical teams."
-                "Additional Considerations:"
-                "Maintain confidentiality and security of log data."
-                "Ensure compliance with relevant data protection regulations."
+        "Objective: You are an intelligent agent designed to analyze WiFi driver logs to identify connectivity issues specifically related to the driver."
+        "Your analysis should prioritize issues based on the following hierarchy:"
+        "WRT Issue"
+        "Limited Connectivity"
+        "Borderline conditions - RF"
+        "Assert"
+        "PoorlyDisc"
+        "Missing Debug Data"
+        "Bad Peer Behavior"
+        "Wrong Prediction"
+        "Bug"
+        "unknown scenario"
+        "if couple of issues observed in the same log , determine the final classification according to priority."
+        "Resources: You have access to a Retrieval-Augmented Generation (RAG) file containing comprehensive information on WiFi driver system requirements and specifications."
+        "Use this resource to inform your analysis and ensure accuracy in identifying driver-related issues."
+        "Instructions:"
+        "Log Analysis:"
+        "Review the WiFi driver logs provided."
+        "Identify patterns, anomalies, or error codes that indicate potential connectivity issues."
+        "Issue Classification:"
+        "Determine if the connectivity issue is directly related to the WiFi driver."
+        "Your classification options are: 'Borderline conditions - RF', 'Wrong Prediction', 'Environment', 'Driver Bug', 'Inapplicable', 'Missing Debug Data', 'Wrong Detection'."
+        "Prioritization:"
+        "1. WRT Issue: If scenarios such as [WRT2G] observed, classify as 'Inapplicable' and ignore other conditions."
+        "2. Limited Connectivity: If limited connectivity is observed, classify as 'Environment'."
+        "3. Borderline conditions - RF: RSSI values are inherently negative and should be treated as such. Ensure that the '-' sign is interpreted as a minus sign indicating a negative value. "
+        "If the majority of 'BC 0' prints show RSSI values lower than -78 dB (e.g., -79, -80), classify as 'Borderline conditions - RF'."
+        "Example - An average RSSI level of -65 is considered good, while an average RSSI level of -79, -80, -81, and so on is considered bad."
+        "4. assert: when a fatal error or FW assert observed , classify as assert"
+        "5. PoorlyDisc: If 'PoorlyDisc' value is '25' is seen more than once, classify as 'Environment' and mention the AP is probably not seen in scan. If 'PoorlyDisc' value is '100', it is normal."
+        "6. Missing Debug Data: For issues like Auth Tx failure or assoc Tx failure AND when the average RSSI level are within acceptable levels , meaning average rssi above -78"
+        "classify as 'Missing Debug Data' and recommend additional air sniffer, if the average RSSI is lower, prefer classification of 'Borderline conditions - RF' "
+        "7. Bad Peer Behavior: Identify issues arising from other devices or network participants affecting connectivity."
+        "8. Wrong Prediction: If no connectivity issue or problem is observed, classify as 'Wrong Prediction'."
+        "9. Bug: Identify any driver-related bugs."
+        "10. Unknown scenario : if non of the above seems to fit , please classify as unknown scenario"
+        "Utilization of RAG File:"
+        "Reference the RAG file to verify driver specifications and requirements."
+        "Use the information to support your analysis and ensure that identified issues align with known driver limitations or requirements."
+        "Reporting:"
+        "Provide a clear and concise report of your findings."
+        "Include a summary of identified driver-related issues and an explanation of issues attributed to external factors."
+        "Continuous Improvement:"
+        "Learn from each analysis to improve future assessments."
+        "Adapt your approach based on feedback and new information."
+        "Output Format:"
+        "Use structured data formats (e.g., JSON, CSV) for easy integration with other systems."
+        "Ensure clarity and precision in your language to facilitate understanding by technical teams."
+        "Additional Considerations:"
+        "Maintain confidentiality and security of log data."
+        "Ensure compliance with relevant data protection regulations."
     )
     system_prompt_text.insert(tk.END, default_system_prompt)
-
 
     submit_button = tk.Button(root, text="Submit", command=on_submit)
     submit_button.grid(row=5, column=0, columnspan=2, pady=10)
@@ -501,9 +531,8 @@ def run_gui():
     classification_text.grid(row=10, column=1, padx=10, pady=5, sticky="nsew")
 
     tk.Label(root, text="Average RSSI:").grid(row=11, column=0, padx=10, pady=5, sticky="nw")
-    Average_RSSI_text = tk.Text(root, height=5, width=100)
-    Average_RSSI_text.grid(row=11, column=1, padx=10, pady=5, sticky="nsew")
-
+    average_rssi_text = tk.Text(root, height=5, width=100)
+    average_rssi_text.grid(row=11, column=1, padx=10, pady=5, sticky="nsew")
 
     root.mainloop()
 
