@@ -15,6 +15,7 @@
     "de-assoc": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*de-assoc",
     "Misbehaving AP Penalty": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*Marked AP as misbehaving",
     "FW Assert": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*FATAL_ERROR: uCode ASSERT",
+	"Assert": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*assert since Miniport initialized",
     "ucode alive": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*uCode is alive",
     "assoc result": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*WDI_IND_ASSOC_RESULT",
     "resume flow finished": "(\\d{2}/\\d{2}/\\d{4}-\\d{2}:\\d{2}:\\d{2}\\.\\d{3}).*RESUME FLOW FINISHED",
