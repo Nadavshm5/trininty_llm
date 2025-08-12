@@ -52,11 +52,11 @@ def generate_text_representation(df):
 def main():
     # log_file_path = r"C:\Work\GenAI\use-cases\Trinity\New folder\log_example_wifi573300.log"  # Path to your log file
     # log_file_path = r"C:\Work\GenAI\use-cases\Trinity\New folder (2)\WifiDriver_99.0.95.5__04-02-2025_20-32-01_273.004.etl.log"
-    log_file_path = r"\\apollo.intel.com\apollo-info-eu-west-1\CCSV\SOC-CQJ4674\WifiDriverLogs\2025-04\WifiDriver_23.140.0.1__08-04-2025_08-58-23_998.003.etl.log"
+    log_file_path = r"\\apollo.intel.com\apollo-info-eu-west-1\IWFT-EXT\SAHARON-MOBL\WifiDriverLogs-LocalTime\2025-07\WifiDriver_23.140.0.3__12-07-2025_10-39-20_432.001.etl.log"
 
     # Prompt user for line range
-    start_line = 56452
-    end_line = 61403
+    start_line = 34238
+    end_line = 40388
 
     df = parse_log_file(log_file_path, start_line, end_line)
     print(f"Processed {len(df)} relevant log lines.")
